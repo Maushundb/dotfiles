@@ -26,6 +26,9 @@ inoremap jj <Esc>
 
 "automatic closing parens
 inoremap ( ()<Esc>i
+inoremap () ()<Esc>i
 inoremap [ []<Esc>i
 inoremap { {}<Esc>i
 inoremap {<CR> {<CR>}<Esc>ko
+inoremap " ""<Esc>i
+inoremap "" ""<Esc>i
