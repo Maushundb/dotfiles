@@ -34,11 +34,3 @@ map 0 ^
 "jj to enter command mode 
 inoremap jj <Esc>
 
-"automatic closing parens
-inoremap ( ()<Esc>i
-inoremap () ()
-inoremap [ []<Esc>i
-inoremap { {}<Esc>i
-inoremap {<CR> {<CR>}<Esc>ko
-inoremap " ""<Esc>i
-inoremap "" ""<Esc>i
