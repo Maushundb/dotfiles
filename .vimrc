@@ -16,7 +16,16 @@ set expandtab       " Expand TABs to spaces
 set autoindent      " turns on autoindent
 set smartindent
 
+" Turn on line numbers
 set number
 
 " Key remappings
+
+"jj to enter command mode 
 inoremap jj <Esc>
+
+"automatic closing parens
+inoremap ( ()<Esc>i
+inoremap [ []<Esc>i
+inoremap { {}<Esc>i
+inoremap {<CR> {<CR>}<Esc>ko
