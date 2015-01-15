@@ -1,3 +1,7 @@
+execute pathogen#infect()
+
+filetype plugin indent on
+
 syntax on
 
 set nocompatible "explicitly get out of vi-compatible mode
