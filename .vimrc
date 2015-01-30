@@ -27,6 +27,9 @@ set mouse=a " use the mouse everywhere
 set wildmenu " turn on command line completetion wild style
 set ruler
 
+" Change timeout length
+set timeoutlen=300
+
 
 """"""""""""""""""""""""
 " Key remappings
@@ -34,7 +37,10 @@ set ruler
 
 " Remap VIM 0 to first non-blank character
 map 0 ^
-
-"jj to enter command mode 
-inoremap jj <Esc>
+" Remap - to $ to go to end of line
+map - $
+" Remap : to ; to avoid shifts
+map ; :
+"jj to enter command mode and not move cursor back 
+inoremap jj <Esc>l
 
