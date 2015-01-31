@@ -19,6 +19,11 @@ set expandtab       " Expand TABs to spaces
 set autoindent      " turns on autoindent
 set smartindent
 
+" Set window split preferences
+set splitbelow
+set splitright
+
+
 set number "turn on line numbers
 
 set backspace=indent,eol,start "Make backspace a more flexible
@@ -26,6 +31,7 @@ set backspace=indent,eol,start "Make backspace a more flexible
 set mouse=a " use the mouse everywhere
 set wildmenu " turn on command line completetion wild style
 set ruler
+set showcmd "show commands from leader
 
 " Change timeout length
 set timeoutlen=300
@@ -43,4 +49,15 @@ map - $
 map ; :
 "jj to enter command mode and not move cursor back 
 inoremap jj <Esc>l
+" Make it easier to move to different split windows
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
+
+""""""""""""""""""""""""
+" Leader shortcuts
+""""""""""""""""""""""""
+let mapleader='\'
+map <Leader>t :NERDTree<CR>
