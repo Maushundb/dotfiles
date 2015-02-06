@@ -6,8 +6,13 @@ Applied solution from http://stackoverflow.com/questions/18197705/adding-your-vi
 <ul>
     <li> Vim </li>
         <ul>
-            <li> Pathogen: https://github.com/tpope/vim-pathogen </li>
-            <li> Auto Pairs: https://github.com/jiangmiao/auto-pairs </li>
+            <li> Pathogen</li>
+            <li> Auto Pairs</li>
+            <li> NerdTree</li>
+            <li>Supertab</li>
         <ul>
 </ul>
+
+<h3>TODO</h3>
+Move .vim into this file like https://github.com/ruslanosipov/dotfiles
     
