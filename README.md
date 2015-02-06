@@ -10,7 +10,7 @@ Applied solution from http://stackoverflow.com/questions/18197705/adding-your-vi
             <li> Auto Pairs</li>
             <li> NerdTree</li>
             <li>Supertab</li>
-        <ul>
+        </ul>
 </ul>
 
 <h3>TODO</h3>
