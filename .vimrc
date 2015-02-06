@@ -1,4 +1,14 @@
+""""""""""""""""""""""""
+" Startup commands
+""""""""""""""""""""""""
 execute pathogen#infect()
+
+" Make vim close is NERDTree is only open window
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+""""""""""""""""""""""""
+" General settings
+""""""""""""""""""""""""
 
 filetype plugin indent on
 
@@ -31,7 +41,7 @@ set backspace=indent,eol,start "Make backspace a more flexible
 set mouse=a " use the mouse everywhere
 set wildmenu " turn on command line completetion wild style
 set ruler
-set showcmd "show commands from leader
+set showcmd "show commands
 
 " Change timeout length
 set timeoutlen=300
