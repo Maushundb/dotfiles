@@ -1,6 +1,7 @@
 """"""""""""""""""""""""
 " Startup commands
 """"""""""""""""""""""""
+runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
 " Make vim close is NERDTree is only open window
