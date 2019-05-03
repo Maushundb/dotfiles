@@ -1,0 +1,15 @@
+{
+    "editor.fontSize": 13,
+    "editor.tabSize": 2,
+    "editor.wordWrapColumn": 100,
+    "prettier.requireConfig": true,
+    "prettier.trailingComma": "all",
+    "workbench.colorTheme": "Hybrid Next",
+    "editor.minimap.enabled": false,
+    "prettier.proseWrap": "always",
+    "cSpell.userWords": [
+        "rerender"
+    ],
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false
+}

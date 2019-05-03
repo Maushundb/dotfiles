@@ -1,0 +1,52 @@
+// Place your key bindings in this file to override the defaults
+[
+  { "key": "ctrl+j",   
+    "command": "workbench.action.previousEditor" 
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "f5",
+    "command": "editor.action.sortLinesAscending"
+  }, 
+  {
+    "key": "[",
+    "command": "type",
+    "args": { "text": "{" },
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "]",
+    "command": "type",
+    "args": { "text": "}" },
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+]",
+    "command": "type",
+    "args": { "text": "]" },
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+[",
+    "command": "type",
+    "args": { "text": "[" },
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+e",
+    "command": "editor.emmet.action.expandAbbreviation",
+    "when": "editorTextFocus && !editorReadonly && !editorTabMovesFocus"
+  },
+  {
+    "key": "tab",
+    "command": "-editor.emmet.action.expandAbbreviation",
+    "when": "config.emmet.triggerExpansionOnTab && editorTextFocus && !editorReadonly && !editorTabMovesFocus"
+  },
+  {
+    "key": "cmd+e",
+    "command": "-actions.findWithSelection"
+  }
+]
