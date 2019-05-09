@@ -15,5 +15,8 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.formatOnSave": true,
-  "vim.camelCaseMotion.enable": true
+  "vim.camelCaseMotion.enable": true,
+  "flow.stopFlowOnExit": false,
+  "flow.pathToFlow": "${flowConfigDir}/node_modules/.bin/flow",
+  "workbench.iconTheme": "file-icons"
 }
