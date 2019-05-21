@@ -18,5 +18,7 @@
   "vim.camelCaseMotion.enable": true,
   "flow.stopFlowOnExit": false,
   "flow.pathToFlow": "${flowConfigDir}/node_modules/.bin/flow",
-  "workbench.iconTheme": "file-icons"
+  "workbench.iconTheme": "file-icons",
+  "window.title": "${activeEditorShort}${separator}${activeEditorMedium}",
+  "flow.useNPMPackagedFlow": true
 }
