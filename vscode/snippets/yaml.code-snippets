@@ -18,7 +18,7 @@
   "Generated Redux Action": {
     "scope": "yaml",
     "prefix": "act",
-    "body": ["- name: $1", "  params:", "    name: $2", "    type: $3"],
+    "body": ["- name: $1", "  params:", "    - name: $2", "      type: $3"],
     "description": "Add a generated action"
   }
 }

@@ -1,6 +1,7 @@
 {
   "editor.fontSize": 13,
   "editor.tabSize": 2,
+  "editor.quickSuggestions": true,
   "editor.wordWrapColumn": 100,
   "prettier.trailingComma": "all",
   "workbench.colorTheme": "Hybrid Next",
