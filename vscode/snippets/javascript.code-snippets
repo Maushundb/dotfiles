@@ -27,4 +27,9 @@
     "prefix": "tst",
     "body": ["import $1 from '../$1'", "", "describe('$1', () => {", "", "});"]
   }
+  "Flow": {
+    "scope": "javascript,typescript",
+    "prefix": "flw",
+    "body": "/* @flow */"
+  }
 }
