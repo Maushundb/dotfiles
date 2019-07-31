@@ -9,7 +9,7 @@
   "Print to console": {
     "scope": "javascript,typescript",
     "prefix": "cl",
-    "body": ["console.log('$1');"],
+    "body": ["console.log(JSON.stringify($1, null, 2));"],
     "description": "Log output to console"
   },
   "Functional console log": {
@@ -26,7 +26,7 @@
     "scope": "javascript,typescript",
     "prefix": "tst",
     "body": ["import $1 from '../$1'", "", "describe('$1', () => {", "", "});"]
-  }
+  },
   "Flow": {
     "scope": "javascript,typescript",
     "prefix": "flw",

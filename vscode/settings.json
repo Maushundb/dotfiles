@@ -23,5 +23,7 @@
   "window.title": "${activeEditorShort}${separator}${activeEditorMedium}",
   "flow.useNPMPackagedFlow": true,
   "editor.suggest.snippetsPreventQuickSuggestions": false,
-  "explorer.autoReveal": false
+  "explorer.autoReveal": false,
+  "window.zoomLevel": 0,
+  "vim.leader": " "
 }
