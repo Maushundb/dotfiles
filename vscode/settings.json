@@ -7,7 +7,9 @@
   "workbench.colorTheme": "Hybrid Next",
   "editor.minimap.enabled": false,
   "prettier.proseWrap": "always",
-  "cSpell.userWords": ["rerender"],
+  "cSpell.userWords": [
+    "rerender"
+  ],
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "editor.scrollBeyondLastLine": false,
@@ -17,11 +19,8 @@
   },
   "editor.formatOnSave": true,
   "vim.camelCaseMotion.enable": true,
-  "flow.stopFlowOnExit": false,
-  "flow.pathToFlow": "${flowConfigDir}/node_modules/.bin/flow",
   "workbench.iconTheme": "file-icons",
   "window.title": "${activeEditorShort}${separator}${activeEditorMedium}",
-  "flow.useNPMPackagedFlow": true,
   "editor.suggest.snippetsPreventQuickSuggestions": false,
   "explorer.autoReveal": false,
   "window.zoomLevel": 0,
