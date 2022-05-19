@@ -1,29 +1,83 @@
 {
-	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
-	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
-	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
-	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
-	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
-	// Placeholders with the same ids are connected.
-	// Example:
-	// "Print to console": {
-	// 	"scope": "javascript,typescript",
-	// 	"prefix": "log",
-	// 	"body": [
-	// 		"console.log('$1');",
-	// 		"$2"
-	// 	],
-	// 	"description": "Log output to console"
-	// }
-	"React Component": {
-		"scope": "javascript,typescript",
-		"prefix": "rjs",
-		"body": [
-			"import * as React from \"react\"",
-			"",
-			"const $1 = () => <$2></$2>;"
-			"",
-			"export default $1;"
-		]
-	}
+  // Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+  // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+  // Placeholders with the same ids are connected.
+  // Example:
+  // "Print to console": {
+  // 	"scope": "javascript,typescript",
+  // 	"prefix": "log",
+  // 	"body": [
+  // 		"console.log('$1');",
+  // 		"$2"
+  // 	],
+  // 	"description": "Log output to console"
+  // }
+  "React Native Component": {
+    "scope": "javascript,typescript,typescriptreact",
+    "prefix": "rnjs",
+    "body": [
+      "import * as React from \"react\"",
+      "import { Text } from 'components';",
+      "import { StyleSheet, View } from 'react-native';",
+      "import { Color, Margin } from 'styles'",
+      "",
+      "type Props = {$1};",
+      "const $TM_FILENAME_BASE = ({}: Props) => <View></View>;",
+      "",
+      "export default $TM_FILENAME_BASE;"
+    ]
+  },
+  "React Component": {
+    "scope": "javascript,typescript,typescriptreact",
+    "prefix": "rjs",
+    "body": [
+      "import * as React from \"react\"",
+      "import styled from 'styled-components';",
+      "",
+      "type Props = {$1};",
+      "",
+      "const Root = styled.div`",
+      "",
+      "`;",
+      "const $TM_FILENAME_BASE = ({}: Props) => <Root></Root>;",
+      "",
+      "export default $TM_FILENAME_BASE;"
+    ]
+  },
+  "React Native Style": {
+    "scope": "javascript,typescript,typescriptreact",
+    "prefix": "rst",
+    "body": "style={styles.$1}"
+  },
+  "Styled Theme Color": {
+    "prefix": "thmc",
+    "body": "${({theme}) => theme.color.$1}"
+  },
+  "Styled Theme Spacing": {
+    "prefix": "thms",
+    "body": "${({theme}) => theme.spacing.$1}"
+  },
+  "Styled Font Size": {
+    "prefix": "thmf",
+    "body": "${({theme}) => theme.fontSize.$1}"
+  },
+  "Styled Font Weight": {
+    "prefix": "thmw",
+    "body": "${({theme}) => theme.fontWeight.$1}"
+  },
+  "Styled Radisu": {
+    "prefix": "thmr",
+    "body": "${({theme}) => theme.radius.$1}"
+  },
+  "Import react": {
+    "prefix": "ir",
+    "body": "import React from 'react'"
+  },
+  "GraphQL Imports": {
+    "prefix": "igql",
+    "body": ["import gql from \"graphql-tag\"", "import {useQuery} from \"@apollo/react-hooks\""]
+  }
 }

@@ -40,6 +40,7 @@ zstyle ':prezto:load' pmodule \
 # Editor
 #
 export EDITOR=vim
+export VISUAL=vim
 
 # Set the key mapping style to 'emacs' or 'vi'.
 zstyle ':prezto:module:editor' key-bindings 'vi'
@@ -168,30 +169,32 @@ alias cn='mosh --no-init -n dev -- tmux new-session -A -s main'
 alias cns='mosh --no-init -n dev -- tmux new-session -A -s secondary'
 alias lsa='ls -a'
 alias dps="docker ps"
+
+alias use-aws-prod="export AWS_PROFILE=production"
+alias use-aws-staging="export AWS_PROFILE=staging"
+alias use-aws-dev="export AWS_PROFILE=development"
+alias which-aws="echo $AWS_PROFILE"
+
+tf () { terraform "$@"; } 
 y () { yarn "$@"; }
 yr () { yarn run "$@"; }
-nr () { npm run "$@"; }
-dc () { docker-compose "$@"; }
-dr () { docker "$@"; }
-alias gaa="git add -A"
-alias gbxx="git branch | grep -v "master" | xargs git branch -D"
-tsa () {
-    touch ~/Code/scenario-editor/src/geese/scenario/index.js
-    touch ~/Code/scenario-editor/src/selectors/index.js
-    touch ~/Code/scenario-editor/src/selectors/scenarioSelectors/index.js
-    touch ~/Code/scenario-editor/src/selectors/compoundSelectors/index.js
-    touch ~/Code/scenario-editor/src/actions/index.js
-    touch ~/Code/scenario-editor/src/constants/scenario.js
-    touch ~/Code/scenario-editor/src/constants/index.js
-    touch ~/Code/scenario-editor/src/selectors/compoundSelectors/worldviewSelectors/index.js
-}
-cln () {
-    git checkout master
-    gbxx
-    git pull
-    tsa
-}
+ymr () { yarn workspace mobile run "$@" }
+ywr () { yarn workspace web run "$@" }
 yt () {
     yr test --runInBand
 }
-
+nr () { npm run "$@"; }
+dc () { docker-compose "$@"; }
+dce () { docker-compose exec web "$@"; }
+dr () { docker "$@"; }
+alias gaa="git add -A"
+alias gbxx="git branch | grep -v "master" | xargs git branch -D"
+cln () {
+    git checkout master 
+    gbxx
+    git pull
+}
+pm () { python manage.py "$@"; }
+gbb () {
+   git checkout -b "maushundb--$1"
+}

@@ -1,9 +1,22 @@
 // Place your key bindings in this file to override the defaults
 [
-  { "key": "ctrl+j", "command": "workbench.action.previousEditor" },
   {
-    "key": "ctrl+k",
+    "key": "cmd+j",
+    "command": "workbench.action.previousEditor"
+  },
+  {
+    "key": "cmd+k",
     "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "cmd+j",
+    "command": "selectNextSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "cmd+k",
+    "command": "selectPrevSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
   },
   {
     "key": "f5",
@@ -12,25 +25,33 @@
   {
     "key": "[",
     "command": "type",
-    "args": { "text": "{" },
+    "args": {
+      "text": "{"
+    },
     "when": "editorTextFocus"
   },
   {
     "key": "]",
     "command": "type",
-    "args": { "text": "}" },
+    "args": {
+      "text": "}"
+    },
     "when": "editorTextFocus"
   },
   {
     "key": "shift+]",
     "command": "type",
-    "args": { "text": "]" },
+    "args": {
+      "text": "]"
+    },
     "when": "editorTextFocus"
   },
   {
     "key": "shift+[",
     "command": "type",
-    "args": { "text": "[" },
+    "args": {
+      "text": "["
+    },
     "when": "editorTextFocus"
   },
   {
@@ -64,16 +85,6 @@
     "command": "-workbench.action.toggleSidebarVisibility"
   },
   {
-    "key": "ctrl+j",
-    "command": "selectNextSuggestion",
-    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-  },
-  {
-    "key": "ctrl+k",
-    "command": "selectPrevSuggestion",
-    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-  },
-  {
     "key": "cmd+r",
     "command": "editor.action.addSelectionToNextFindMatch",
     "when": "editorFocus"
@@ -86,5 +97,36 @@
   {
     "key": "shift+cmd+\\",
     "command": "workbench.files.action.showActiveFileInExplorer"
+  },
+  {
+    "key": "shift+cmd+k",
+    "command": "-editor.action.deleteLines",
+  },
+  {
+    "key": "shift+cmd+j",
+    "command": "-workbench.action.search.toggleQueryDetails",
+    "when": "inSearchEditor || searchViewletFocus"
+  },
+  {
+    "key": "shift+cmd+j",
+    "command": "workbench.action.focusLeftGroup"
+  },
+  {
+    "key": "shift+cmd+k",
+    "command": "workbench.action.focusRightGroup"
+  },
+  {
+    "key": "cmd+k cmd+right",
+    "command": "-workbench.action.focusRightGroup"
+  },
+  {
+    "key": "alt+cmd+left",
+    "command": "-workbench.action.terminal.focusPreviousPane",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "alt+cmd+right",
+    "command": "-workbench.action.terminal.focusNextPane",
+    "when": "terminalFocus"
   }
 ]

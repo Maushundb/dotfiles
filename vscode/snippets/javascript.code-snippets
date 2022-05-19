@@ -7,29 +7,34 @@
   // Placeholders with the same ids are connected.
   // Example:
   "Print to console": {
-    "scope": "javascript,typescript",
+    "scope": "javascript,typescript,typescriptreact",
     "prefix": "cl",
     "body": ["console.log(JSON.stringify($1, null, 2));"],
     "description": "Log output to console"
   },
   "Functional console log": {
-    "scope": "javascript,typescript",
+    "scope": "javascript,typescript,typescriptreact",
     "prefix": "fcl",
     "body": "x => console.log(JSON.stringify(x, null, 2)) || x,"
   },
   "Function": {
-    "scope": "javascript,typescript",
+    "scope": "javascript,typescript,typescriptreact",
     "prefix": "fjs",
-    "body": ["/* @flow */", "", "const $1 = () => {", "  $0", "};", "", "export default $1;"]
+    "body": ["const $1 = () => {", "  $0", "};", "", "export default $1;"]
+  },
+  "Destructuring Function": {
+    "scope": "javascript,typescript,typescriptreact",
+    "prefix": "dfjs",
+    "body": ["({ $0 }) => ({ $1 })"]
   },
   "Test": {
-    "scope": "javascript,typescript",
+    "scope": "javascript,typescript,typescriptreact",
     "prefix": "tst",
     "body": ["import $1 from '../$1'", "", "describe('$1', () => {", "", "});"]
   },
-  "Flow": {
-    "scope": "javascript,typescript",
-    "prefix": "flw",
-    "body": "/* @flow */"
+  "UI Lib Import": {
+    "scope": "javascript,typescript,typescriptreact",
+    "prefix": "iui",
+    "body": "import $1 from 'components/lib/ui/$1';"
   }
 }

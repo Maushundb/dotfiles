@@ -3,26 +3,146 @@
   "editor.tabSize": 2,
   "editor.quickSuggestions": true,
   "editor.wordWrapColumn": 100,
-  "prettier.trailingComma": "all",
+  "editor.rulers": [100],
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "eslint.packageManager": "yarn",
+  "eslint.workingDirectories": ["packages/mobile", "packages/common"],
   "workbench.colorTheme": "Hybrid Next",
   "editor.minimap.enabled": false,
   "prettier.proseWrap": "always",
+  "colorize.languages": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
   "cSpell.userWords": [
-    "rerender"
+    "appboy",
+    "Backgrounded",
+    "cloudinary",
+    "component",
+    "cusip",
+    "destructure",
+    "ellipsize",
+    "envkey",
+    "finicity",
+    "freemium",
+    "issues",
+    "luxon",
+    "mergeable",
+    "persistor",
+    "promisify",
+    "refetch",
+    "rerender",
+    "signup",
+    "timeframe",
+    "typesafe",
+    "uncancellation",
+    "unmount",
+    "unprioritized",
+    "unprioritized issues",
+    "upsert",
+    "upserting",
+    "will",
+    "xlarge",
+    "xsmall",
+    "zestimate",
+    "zillow"
   ],
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "editor.scrollBeyondLastLine": false,
-  "prettier.printWidth": 100,
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.rulers": [100]
   },
-  "editor.formatOnSave": true,
   "vim.camelCaseMotion.enable": true,
+  "vim.leader": " ",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "e"],
+      "after": ["y", "s", "%", "{", "a", "r", "e", "t", "u", "r", "n"]
+    },
+    {
+      "before": ["<leader>", "c"],
+      "after": ["l", "D", "i", "/", "esc"]
+    },
+    {
+      "before": ["<leader>", "d"],
+      "after": ["\"", "_", "d"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "d"],
+      "after": ["\"", "_", "d"]
+    }
+  ],
   "workbench.iconTheme": "file-icons",
   "window.title": "${activeEditorShort}${separator}${activeEditorMedium}",
   "editor.suggest.snippetsPreventQuickSuggestions": false,
   "explorer.autoReveal": false,
-  "window.zoomLevel": 0,
-  "vim.leader": " "
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "prettier.disableLanguages": ["vue", "yaml", "yml"],
+  "prettier.trailingComma": "all",
+  "prettier.printWidth": 100,
+  "prettier.packageManager": "yarn",
+  "python.diagnostics.sourceMapsEnabled": false,
+  "[python]": {
+    "editor.rulers": [120],
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "files.trimTrailingWhitespace": true,
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "python.formatting.blackArgs": ["-l", "120", "-t", "py38"],
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "/Users/brandon/Code/api/.venv/bin/black",
+  "python.pythonPath": "/Users/brandon/Code/api/.venv/bin/python",
+  "mypy.configFile": "/Users/brandon/Code/api/mypy.ini",
+  "python.linting.mypyPath": "/Users/brandon/Code/api/scripts/mypyls_loader.py",
+  "python.linting.mypyArgs": ["--show-column-numbers"],
+  "python.pipenvPath": "/usr/local/bin/pipenv",
+  "search.enableSearchEditorPreview": true,
+  "workbench.sideBar.location": "left",
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "explorer.compactFolders": false,
+  "typescript.tsserver.maxTsServerMemory": 6144,
+  "search.exclude": {
+    "**/.git": true,
+    "**/node_modules": true,
+    "**/build": true
+  },
+  "python.linting.flake8Path": "~/Code/api/.venv/bin/flake8",
+  "python.sortImports.path": "/Users/brandon/Code/api/.isort.cfg",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "jupyter.sendSelectionToInteractiveWindow": false,
+  "prettier.arrowParens": "avoid",
+  "editor.stickyTabStops": true,
+  "files.exclude": {
+    "**/node_modules": true
+  },
+  "search.smartCase": true,
+  "files.insertFinalNewline": true,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "python.languageServer": "Pylance",
+  "python.analysis.completeFunctionParens": true,
+  "editor.accessibilitySupport": "off",
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "python.defaultInterpreterPath": "/Users/brandon/Code/api/.venv/bin/python",
+  "mypy.dmypyExecutable": "${workspaceFolder}/.venv/bin/dmypy",
+  "mypy.runUsingActiveInterpreter": true,
+  "editor.formatOnSave": true,
+  "editor.inlineSuggest.enabled": true,
+  "window.zoomLevel": 2
 }
